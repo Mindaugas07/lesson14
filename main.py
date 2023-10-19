@@ -16,3 +16,33 @@
         
 # print(string_with_unique_char("asdf 466%54 sadf: @dsaf %"))
 
+# Task nr.1: 
+# Create a mini program that takes 10 random numbers in one input ("1,2,5 76,89 ...etc")
+# Write functions to: calculate their sum, multiplication of highest and lowest numbers
+# and the function which makes a new string where numbers are positioned from highest to lowest.
+
+# from random import randint
+
+# def ten_random_integers_from_1_to_100_generator():
+#     ten_random_numbers_list = [(randint(1, 100)) for i in range(10)]
+#     return ten_random_numbers_list
+
+# input_string = input("Please enter 10 random integers from 1 to 100: ")
+
+# def calculate_sum_of_numbers(list_of_ten_random_numbers: list) -> int:
+#     return sum(list_of_ten_random_numbers)
+
+# print(calculate_sum_of_numbers(ten_random_numbers_list))
+
+
+# Task nr.2:
+# Create a program , which takes 3 differnt sentences(ne maziau). The input should have all 
+# error checking in mind. The program then should create a dictionary of whith key values 
+# corresponding to words `long` (more than 9 letters in a words) `medium`(7 letters)
+# `short` (5 words)(Short < 35% , medium: 25% , long 10%). Then the pgrogram should create a new sentences (if 3 provided, 3 new sentences should be returned) 
+# with following rules attached:
+# All sentences should have same (or less) words amount as entered one;
+# The most frequent letter from the sentence (from input) should be dominated in a new sentence as well.
+
+# The program should return new sentences with statitstics of ratio how many words was used from all sections 
+# (as for exmpale: long 25%,medium 45%, short 30%)

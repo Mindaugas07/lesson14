@@ -16,6 +16,7 @@
         
 # print(string_with_unique_char("asdf 466%54 sadf: @dsaf %"))
 
+from typing import List
 # Task nr.1: 
 # Create a mini program that takes 10 random numbers in one input ("1,2,5 76,89 ...etc")
 # Write functions to: calculate their sum, multiplication of highest and lowest numbers
@@ -28,7 +29,7 @@
 #     return ten_random_numbers_list
 
 
-# def calculate_sum_of_numbers(list_of_ten_random_numbers: list) -> int:
+# def calculate_sum_of_numbers(list_of_ten_random_numbers) -> int:
 #     return sum(list_of_ten_random_numbers)
 
 # print(calculate_sum_of_numbers(ten_random_numbers_list))
@@ -36,20 +37,20 @@
 def ten_random_integers_from_input() -> list:
     input_string = input("Please enter 10 random integers from 1 to 100 in one string as '1, 6, 18, 45, 99 ...etc' ")
     ten_random_number_list = [int(number) for number in input_string.split(",")]
-    return(ten_random_number_list)
+    return (ten_random_number_list)
 
-# def multiplication_highest_lowest_number_from_list(ten_random_integers_from_input: list) -> int:
-#     ten_interger_list = ten_random_integers_from_input() 
-#     return max(ten_interger_list) * min(ten_interger_list)
+def multiplication_highest_lowest_number_from_list(ten_random_integers_from_input: List[int]) -> int:
+    ten_interger_list List[int] = ten_random_integers_from_input() 
+    return max(ten_interger_list) * min(ten_interger_list)
 
-# print(multiplication_highest_lowest_number_from_list(ten_random_integers_from_input))
+print(multiplication_highest_lowest_number_from_list(ten_random_integers_from_input))
 
-def numbers_of_string_in_opposite_order(ten_random_integers_from_input: list) -> list:
-    ten_integer_list = ten_random_integers_from_input()
-    ten_integer_list.sort(reverse=True)
-    return ten_integer_list
+# def numbers_of_string_in_opposite_order(ten_random_integers_from_input: list) -> list:
+#     ten_integer_list = ten_random_integers_from_input()
+#     ten_integer_list.sort(reverse=True)
+#     return ten_integer_list
 
-print(numbers_of_string_in_opposite_order(ten_random_integers_from_input))
+# print(numbers_of_string_in_opposite_order(ten_random_integers_from_input))
 
 # Task nr.2:
 # Create a program , which takes 3 differnt sentences(ne maziau). The input should have all 

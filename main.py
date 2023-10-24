@@ -16,7 +16,7 @@
         
 # print(string_with_unique_char("asdf 466%54 sadf: @dsaf %"))
 
-from typing import List
+
 # Task nr.1: 
 # Create a mini program that takes 10 random numbers in one input ("1,2,5 76,89 ...etc")
 # Write functions to: calculate their sum, multiplication of highest and lowest numbers
@@ -34,32 +34,36 @@ from typing import List
 
 # print(calculate_sum_of_numbers(ten_random_numbers_list))
 
-def ten_random_integers_from_input() -> list:
-    input_string = input("Please enter 10 random integers from 1 to 100 in one string as '1, 6, 18, 45, 99 ...etc' ")
-    ten_random_number_list = [int(number) for number in input_string.split(",")]
-    return (ten_random_number_list)
+# def ten_random_integers_from_input() -> list:
+#     input_string = input("Please enter 10 random integers from 1 to 100 in one string as '1, 6, 18, 45, 99 ...etc' ")
+#     ten_random_number_list = [int(number) for number in input_string.split(",")]
+#     return (ten_random_number_list)
 
-def multiplication_highest_lowest_number_from_list(ten_random_integers_from_input: List[int]) -> int:
-    ten_interger_list List[int] = ten_random_integers_from_input() 
-    return max(ten_interger_list) * min(ten_interger_list)
+# def multiplication_highest_lowest_number_from_list(ten_random_integers_from_input: List[int]) -> int:
+#     ten_interger_list: List[int] = ten_random_integers_from_input() 
+#     return max(ten_interger_list) * min(ten_interger_list)
 
-print(multiplication_highest_lowest_number_from_list(ten_random_integers_from_input))
+# print(multiplication_highest_lowest_number_from_list(ten_random_integers_from_input))
 
-# def numbers_of_string_in_opposite_order(ten_random_integers_from_input: list) -> list:
-#     ten_integer_list = ten_random_integers_from_input()
-#     ten_integer_list.sort(reverse=True)
-#     return ten_integer_list
+# # def numbers_of_string_in_opposite_order(ten_random_integers_from_input: List[int]) -> list:
+# #     ten_integer_list = ten_random_integers_from_input()
+# #     ten_integer_list.sort(reverse=True)
+# #     return ten_integer_list
 
-# print(numbers_of_string_in_opposite_order(ten_random_integers_from_input))
+# # print(numbers_of_string_in_opposite_order(ten_random_integers_from_input))
 
-# Task nr.2:
-# Create a program , which takes 3 differnt sentences(ne maziau). The input should have all 
-# error checking in mind. The program then should create a dictionary of whith key values 
-# corresponding to words `long` (more than 9 letters in a words) `medium`(7 letters)
-# `short` (5 words)(Short < 35% , medium: 25% , long 10%). Then the pgrogram should create a new sentences (if 3 provided, 3 new sentences should be returned) 
-# with following rules attached:
-# All sentences should have same (or less) words amount as entered one;
-# The most frequent letter from the sentence (from input) should be dominated in a new sentence as well.
+# User enters two names separated by comma : for example :('Mindaugas PiktasDestytojas, Mindaugas Juokauja') 
+# Create a function that would swipe surnames and will prduxe new name surname and 
+# another function funtion that will swap names.
 
-# The program should return new sentences with statitstics of ratio how many words was used from all sections 
-# (as for exmpale: long 25%,medium 45%, short 30%)
+# from typing import List
+
+# def names_from_input_to_tuple() -> tuple:
+#     input_string: str = input("Enter two names separated by comma: for example ('Mindaugas PiktasDestytojas, Mindaugas Juokauja') " )
+#     separate_names_string: str = input_string.replace(",", "")
+#     separate_names_list: List[str] = separate_names_string.split(" ")
+#     return separate_names_list[0] + " " + separate_names_list[3], separate_names_list[2] + " " + separate_names_list[1]
+        
+
+# print(names_from_input_to_tuple())
+
